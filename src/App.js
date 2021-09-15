@@ -1,7 +1,7 @@
 import './App.scss';
 import React, {Component} from 'react';
 import {Button, Card, Col, Container, Form, Row} from 'react-bootstrap';
-import getTemplate from './getTemplate';
+import GetTemplate from './utils/GetTemplate';
 
 export default class App extends Component {
   constructor(props) {
@@ -63,7 +63,7 @@ export default class App extends Component {
                   </Col>
                   <Col xs={8}>
                     <div className="w-100 mb-3">
-                      <Form.Control as="textarea" ref={this.codeBlock} style={{height: '370px'}} value={getTemplate(this.state.link, this.state.link, this.state.imageUrl)}/>
+                      <Form.Control as="textarea" ref={this.codeBlock} style={{height: '370px'}} value={GetTemplate(this.state.link, this.state.link, this.state.imageUrl)}/>
                     </div>
                     <Button type="button" onClick={this.copyToClipboard}>Copy to clipboard</Button>
                   </Col>

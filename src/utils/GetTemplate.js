@@ -1,4 +1,4 @@
-export default function (link, alt, imageUrl) {
+const GetTemplate = (link, alt, imageUrl) => {
   return `<div class="img-container center fixedwidth fullwidthOnMobile" align="center" style="padding-right: 0px;padding-left: 0px;">
   <!--[if mso]>
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -9,4 +9,6 @@ export default function (link, alt, imageUrl) {
   </a>
   <!--[if mso]></td></tr></table><![endif]-->
 </div>`;
-}
+};
+
+export default GetTemplate;
