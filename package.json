@@ -9,6 +9,7 @@
     "type": "git",
     "url": "git@github.com:ivan1fun/img-block-generator.git"
   },
+  "homepage": "https://ivan1fun.github.io/img-block-generator/",
   "private": true,
   "dependencies": {
     "bootstrap": "5.1.0",
@@ -20,7 +21,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
