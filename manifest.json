@@ -1,0 +1,8 @@
+{
+  "short_name": "Image block generator",
+  "name": "Image block generator for beefree.io editor",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
