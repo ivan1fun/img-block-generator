@@ -63,7 +63,7 @@ export default class App extends Component {
                   </Col>
                   <Col xs={8}>
                     <div className="w-100 mb-3">
-                      <Form.Control as="textarea" ref={this.codeBlock} style={{height: '370px'}} value={GetTemplate(this.state.link, this.state.link, this.state.imageUrl)}/>
+                      <Form.Control as="textarea" ref={this.codeBlock} style={{height: '370px'}} value={GetTemplate(this.state.link, this.state.alt, this.state.imageUrl)}/>
                     </div>
                     <Button type="button" onClick={this.copyToClipboard}>Copy to clipboard</Button>
                   </Col>
